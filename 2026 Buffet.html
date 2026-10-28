@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="zh-HK">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>香港企業午間聚餐 - 六大優質海鮮自助餐深度評測卡片</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        .filter-btn.active {
+            background-color: #1e1b4b;
+            color: #ffffff;
+            border-color: #1e1b4b;
+        }
+    </style>
+</head>
+<!-- Color Palette: Brilliant Navy & Vibrant Gold | Confirmation: NEITHER Mermaid JS NOR SVG were used in this output -->
+<body class="bg-slate-50 text-slate-800 font-sans leading-relaxed min-h-screen flex flex-col justify-between">
+
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8 space-y-8 w-full">
+
+        <section class="flex flex-col sm:flex-row justify-between items-center gap-4 bg-white p-4 sm:p-6 rounded-2xl border border-slate-200 shadow-sm">
+            <div class="flex items-center gap-2">
+                <span class="text-lg">🎯</span>
+                <div>
+                    <h2 class="text-base font-bold text-slate-900">快速篩選餐廳區域</h2>
+                    <p class="text-xs text-slate-500">點擊切換查看港島區與九龍區精選海鮮自助餐</p>
+                </div>
+            </div>
+            <div class="flex flex-wrap gap-2 w-full sm:w-auto" id="filterContainer">
+                <button onclick="filterRegion('all')" class="filter-btn active flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs font-bold border border-slate-300 hover:bg-slate-100 transition-colors">
+                    全部 6 間餐廳
+                </button>
+                <button onclick="filterRegion('hk')" class="filter-btn flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs font-bold border border-slate-300 hover:bg-slate-100 transition-colors">
+                    港島區 (3間)
+                </button>
+                <button onclick="filterRegion('kl')" class="filter-btn flex-1 sm:flex-initial px-4 py-2 rounded-xl text-xs font-bold border border-slate-300 hover:bg-slate-100 transition-colors">
+                    九龍區 (3間)
+                </button>
+            </div>
+        </section>
+
+        <section class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6" id="cardsGrid">
+
+            <div class="card-item hk bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-blue-900 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl">
+                    港島區・銅鑼灣
+                </div>
+                <div>
+                    <div class="mb-4 pt-1">
+                        <span class="text-xs font-extrabold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">🍨 甜品與活力首選</span>
+                        <h3 class="text-xl font-black text-slate-900 mt-2">香港柏寧酒店 - PLAYT</h3>
+                    </div>
+
+                    <div class="space-y-2 text-xs text-slate-600 mb-5 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-2">
+                            <span>🕒</span> <strong>午市時間：</strong> 12:00 - 14:30
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>🚇</span> <strong>港鐵交通：</strong> 銅鑼灣站 E 出口 (步行約3分鐘)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💵</span> <strong>成人原價 (連加一):</strong> <span class="font-bold text-slate-900 text-sm">HKD 515</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-5">
+                        <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+                            <span class="font-bold text-indigo-950 text-xs block mb-1">🦪 招牌海鮮與重點食材：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                即開生蠔、鱈蟹腳、原隻鮑魚、泰式生蝦、刺身拼盤。
+                            </p>
+                        </div>
+                        <div class="bg-amber-50/70 p-3.5 rounded-xl border border-amber-100">
+                            <span class="font-bold text-amber-950 text-xs block mb-1">🍰 熱葷與特式亮點：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                自家製意式 Gelato、貓山王榴槤拿破崙、西班牙烤豬。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-100/80 p-3 rounded-xl text-xs space-y-1 text-slate-700">
+                        <span class="font-bold text-indigo-900 block mb-0.5">👍 推薦原因：</span>
+                        <p class="text-xs">開放式廚房「廚房劇院」概念，氛圍年輕時尚，甜品極具特色，十分適合跨部門輕鬆聚餐。</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center text-xs text-slate-500">
+                    <span class="font-semibold text-slate-700">💡 籌辦提示：</span>
+                    <span class="bg-slate-100 px-2 py-0.5 rounded text-[11px]">4位以上需預付$100/位訂金</span>
+                </div>
+            </div>
+
+            <div class="card-item kl bg-white rounded-2xl p-6 shadow-sm border-2 border-indigo-500/30 ring-2 ring-indigo-500/10 hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-indigo-900 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl">
+                    九龍區・尖沙咀
+                </div>
+                <div>
+                    <div class="mb-4 pt-1">
+                        <span class="text-xs font-extrabold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">🏆 頂級海鮮奢華標竿</span>
+                        <h3 class="text-xl font-black text-slate-900 mt-2">香港朗廷酒店 - The Food Gallery</h3>
+                    </div>
+
+                    <div class="space-y-2 text-xs text-slate-600 mb-5 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-2">
+                            <span>🕒</span> <strong>午市時間：</strong> 12:00 - 14:30
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>🚇</span> <strong>港鐵交通：</strong> 尖沙咀/尖東站 (步行約3分鐘)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💵</span> <strong>成人原價 (連加一):</strong> <span class="font-bold text-slate-900 text-sm">HKD 592</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-5">
+                        <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+                            <span class="font-bold text-indigo-950 text-xs block mb-1">🦞 招牌海鮮與重點食材：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                長腳蟹、麵包蟹、波士頓龍蝦、翡翠螺、鮮甜海膽刺身。
+                            </p>
+                        </div>
+                        <div class="bg-amber-50/70 p-3.5 rounded-xl border border-amber-100">
+                            <span class="font-bold text-amber-950 text-xs block mb-1">🥩 熱葷與特式亮點：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                脆炸生蠔、威靈頓牛柳、烤阿根廷沙朗牛排、Mövenpick雪糕。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-100/80 p-3 rounded-xl text-xs space-y-1 text-slate-700">
+                        <span class="font-bold text-indigo-900 block mb-0.5">👍 推薦原因：</span>
+                        <p class="text-xs">五星級英倫高雅風格，海鮮陣容為六間中極具份量，能展現企業對團隊的重視與禮遇。</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center text-xs text-slate-500">
+                    <span class="font-semibold text-slate-700">💡 籌辦提示：</span>
+                    <span class="bg-emerald-50 text-emerald-700 font-bold px-2 py-0.5 rounded text-[11px]">可留意早鳥買一送一/快閃優惠</span>
+                </div>
+            </div>
+
+            <div class="card-item kl bg-white rounded-2xl p-6 shadow-sm border-2 border-indigo-500/30 ring-2 ring-indigo-500/10 hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-indigo-900 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl">
+                    九龍區・佐敦
+                </div>
+                <div>
+                    <div class="mb-4 pt-1">
+                        <span class="text-xs font-extrabold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">🦪 生蠔蟹類超高口碑</span>
+                        <h3 class="text-xl font-black text-slate-900 mt-2">逸東酒店 - 普慶餐廳 The Astor</h3>
+                    </div>
+
+                    <div class="space-y-2 text-xs text-slate-600 mb-5 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-2">
+                            <span>🕒</span> <strong>午市時間：</strong> 12:00 - 14:30
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>🚇</span> <strong>港鐵交通：</strong> 佐敦站 B1 出口 (步行約3分鐘)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💵</span> <strong>成人原價 (連加一):</strong> <span class="font-bold text-slate-900 text-sm">HKD 459.8 - 558.8</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-5">
+                        <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+                            <span class="font-bold text-indigo-950 text-xs block mb-1">🦀 招牌海鮮與重點食材：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                任食即開生蠔、松葉蟹腳、麵包蟹、新鮮刺身、<strong>每位尊享法式焗龍蝦尾主菜</strong>。
+                            </p>
+                        </div>
+                        <div class="bg-amber-50/70 p-3.5 rounded-xl border border-amber-100">
+                            <span class="font-bold text-amber-950 text-xs block mb-1">🍜 熱葷與特式亮點：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                M6-M7和牛肉眼、東南亞主題美食專區、港式懷舊甜品區。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-100/80 p-3 rounded-xl text-xs space-y-1 text-slate-700">
+                        <span class="font-bold text-indigo-900 block mb-0.5">👍 推薦原因：</span>
+                        <p class="text-xs">全港口碑極佳的海鮮自助餐之一，設有七大美食專區，食物款式豐富，滿意度極高。</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center text-xs text-slate-500">
+                    <span class="font-semibold text-slate-700">💡 籌辦提示：</span>
+                    <span class="bg-amber-50 text-amber-800 font-bold px-2 py-0.5 rounded text-[11px]">熱門度極高，建議10月下旬預訂</span>
+                </div>
+            </div>
+
+            <div class="card-item hk bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-blue-900 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl">
+                    港島區・黃竹坑
+                </div>
+                <div>
+                    <div class="mb-4 pt-1">
+                        <span class="text-xs font-extrabold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">🌴 渡假園林空間放鬆</span>
+                        <h3 class="text-xl font-black text-slate-900 mt-2">海洋公園萬豪酒店 - 海灣餐廳</h3>
+                    </div>
+
+                    <div class="space-y-2 text-xs text-slate-600 mb-5 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-2">
+                            <span>🕒</span> <strong>午市時間：</strong> 12:00 - 14:30
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>🚇</span> <strong>港鐵交通：</strong> 海洋公園站 B 出口 (步行約1分鐘)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💵</span> <strong>成人原價 (連加一):</strong> <span class="font-bold text-slate-900 text-sm">HKD 547.8</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-5">
+                        <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+                            <span class="font-bold text-indigo-950 text-xs block mb-1">🦞 招牌海鮮與重點食材：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                波士頓龍蝦、鱈場蟹腳、果皮蒸比目魚、鮮甜帶子刺身。
+                            </p>
+                        </div>
+                        <div class="bg-amber-50/70 p-3.5 rounded-xl border border-amber-100">
+                            <span class="font-bold text-amber-950 text-xs block mb-1">🥩 熱葷與特式亮點：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                韓式燴牛肋骨、網燒和牛、燒羊腿、精緻法式甜品專櫃。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-100/80 p-3 rounded-xl text-xs space-y-1 text-slate-700">
+                        <span class="font-bold text-indigo-900 block mb-0.5">👍 推薦原因：</span>
+                        <p class="text-xs">遠離都市喧囂，擁有渡假酒店級別的寬敞空間，採光絕佳，非常適合30人大型團隊放鬆。</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center text-xs text-slate-500">
+                    <span class="font-semibold text-slate-700">💡 籌辦提示：</span>
+                    <span class="bg-indigo-50 text-indigo-800 font-bold px-2 py-0.5 rounded text-[11px]">30人以上設專屬團體特惠方案</span>
+                </div>
+            </div>
+
+            <div class="card-item hk bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-blue-900 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl">
+                    港島區・炮台山
+                </div>
+                <div>
+                    <div class="mb-4 pt-1">
+                        <span class="text-xs font-extrabold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">🌊 維港海景尊尚體驗</span>
+                        <h3 class="text-xl font-black text-slate-900 mt-2">港島海逸君綽酒店 - Harbour Grand Café</h3>
+                    </div>
+
+                    <div class="space-y-2 text-xs text-slate-600 mb-5 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-2">
+                            <span>🕒</span> <strong>午市時間：</strong> 12:00 - 14:30
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>🚇</span> <strong>港鐵交通：</strong> 炮台山站 A 出口 (步行約2分鐘)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💵</span> <strong>成人原價 (連加一):</strong> <span class="font-bold text-slate-900 text-sm">HKD 471</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-5">
+                        <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+                            <span class="font-bold text-indigo-950 text-xs block mb-1">🦪 招牌海鮮與重點食材：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                原隻鮑魚、麵包蟹、冰鎮蟹腳、翡翠螺、三文魚刺身。
+                            </p>
+                        </div>
+                        <div class="bg-amber-50/70 p-3.5 rounded-xl border border-amber-100">
+                            <span class="font-bold text-amber-950 text-xs block mb-1">燕 甜品與特式亮點：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                松露及燕窩主題甜品、燕窩芒果意式奶凍、Mövenpick雪糕。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-100/80 p-3 rounded-xl text-xs space-y-1 text-slate-700">
+                        <span class="font-bold text-indigo-900 block mb-0.5">👍 推薦原因：</span>
+                        <p class="text-xs">巨型落地玻璃窗坐擁維多利亞港景致，品質與價格極具競爭力，深受港島區企業喜愛。</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center text-xs text-slate-500">
+                    <span class="font-semibold text-slate-700">💡 籌辦提示：</span>
+                    <span class="bg-slate-100 px-2 py-0.5 rounded text-[11px]">可要求安排臨海巨型連排座位區</span>
+                </div>
+            </div>
+
+            <div class="card-item kl bg-white rounded-2xl p-6 shadow-sm border border-slate-200 hover:shadow-xl transition-all flex flex-col justify-between relative overflow-hidden group">
+                <div class="absolute top-0 right-0 bg-indigo-900 text-white text-[11px] font-bold px-3 py-1 rounded-bl-xl">
+                    九龍區・尖沙咀
+                </div>
+                <div>
+                    <div class="mb-4 pt-1">
+                        <span class="text-xs font-extrabold text-amber-600 bg-amber-50 px-2.5 py-1 rounded-md border border-amber-200">🍷 免開瓶費與實惠之選</span>
+                        <h3 class="text-xl font-black text-slate-900 mt-2">九龍酒店 - 倚窗閣 The Window Café</h3>
+                    </div>
+
+                    <div class="space-y-2 text-xs text-slate-600 mb-5 bg-slate-50 p-3 rounded-xl border border-slate-100">
+                        <div class="flex items-center gap-2">
+                            <span>🕒</span> <strong>午市時間：</strong> 11:30 - 14:30 (用餐時間最長)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>🚇</span> <strong>港鐵交通：</strong> 尖沙咀站 L 出口 (步行約1分鐘)
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <span>💵</span> <strong>成人原價 (連加一):</strong> <span class="font-bold text-slate-900 text-sm">HKD 448.8 - 549.6</span>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 mb-5">
+                        <div class="bg-indigo-50/70 p-3.5 rounded-xl border border-indigo-100">
+                            <span class="font-bold text-indigo-950 text-xs block mb-1">🦀 招牌海鮮與重點食材：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                雪花蟹腳、青口、海鮮冷盤、各國現切刺身。
+                            </p>
+                        </div>
+                        <div class="bg-amber-50/70 p-3.5 rounded-xl border border-amber-100">
+                            <span class="font-bold text-amber-950 text-xs block mb-1">🥩 熱葷與特式亮點：</span>
+                            <p class="text-xs text-slate-700 leading-relaxed">
+                                長達 66 米自助餐枱、烤西利亞牛排、經典芒果拿破崙。
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="bg-slate-100/80 p-3 rounded-xl text-xs space-y-1 text-slate-700">
+                        <span class="font-bold text-indigo-900 block mb-0.5">👍 推薦原因：</span>
+                        <p class="text-xs">地點極其便利，獨家提供「自攜洋酒免收開瓶費」政策，適合打算自備美酒慶祝的團隊。</p>
+                    </div>
+                </div>
+
+                <div class="mt-5 pt-3 border-t border-slate-100 flex justify-between items-center text-xs text-slate-500">
+                    <span class="font-semibold text-slate-700">💡 籌辦提示：</span>
+                    <span class="bg-emerald-50 text-emerald-800 font-bold px-2 py-0.5 rounded text-[11px]">自攜酒水免開瓶費</span>
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-slate-900 text-slate-400 py-6 text-center text-xs border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 space-y-1">
+            <p class="font-bold text-slate-300">2026年12月香港企業午間聚餐 - 六大海鮮自助餐評測卡片</p>
+            <p class="text-slate-500">已針對 30 人企業聚餐規格進行食材、時間、交通及原價資料優化</p>
+        </div>
+    </footer>
+
+    <script>
+        function filterRegion(region) {
+            const cards = document.querySelectorAll('.card-item');
+            const buttons = document.querySelectorAll('.filter-btn');
+
+            buttons.forEach(btn => btn.classList.remove('active'));
+            event.currentTarget.classList.add('active');
+
+            cards.forEach(card => {
+                if (region === 'all') {
+                    card.style.display = 'flex';
+                } else if (card.classList.contains(region)) {
+                    card.style.display = 'flex';
+                } else {
+                    card.style.display = 'none';
+                }
+            });
+        }
+    </script>
+</body>
+</html>
